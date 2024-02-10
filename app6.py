@@ -18,11 +18,9 @@ access_token = os.getenv("ACCESS_TOKEN")
 
 if model_dir:
     # Use local model
-    model_key_base = os.path.join(model_dir, "stabilityai/stable-diffusion-xl-base-1.0")
-    model_key_refiner = os.path.join(model_dir, "stabilityai/stable-diffusion-xl-refiner-1.0")
+    model_key_base = os.path.join(model_dir, "stablediffusionapi/zavychromaxl-v31")
 else:
-    model_key_base = "stabilityai/stable-diffusion-xl-base-1.0"
-    model_key_refiner = "stabilityai/stable-diffusion-xl-refiner-1.0"
+    model_key_base = "stablediffusionapi/zavychromaxl-v31"
 
 # Use refiner (enabled by default)
 enable_refiner = os.getenv("ENABLE_REFINER", "true").lower() == "true"
